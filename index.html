@@ -1,0 +1,47 @@
+<html ng-app="matdesApp">
+<head>
+    <!-- Angulars Material CSS using RawGit to load directly from `bower-material/master` -->
+    <link rel="stylesheet" href="bower_components/HTML5-Reset/assets/css/reset.css"/>
+    <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="stylesheets/main.css"/>
+</head>
+<body>
+
+<div ng-controller="AppCtrl" layout="column" layout-fill>
+    <section layout="row" flex>
+        <md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" md-is-locked-open="$media('gt-md')">
+            <md-content class="md-padding" ng-controller="LeftCtrl">
+                <p>
+                    This is where you're gonna put stuff, bro.
+                </p>
+            </md-content>
+        </md-sidenav>
+        <md-content flex class="content_mainContent">
+            <md-toolbar>
+                <h2 class="md-toolbar-tools">
+                    <md-button ng-click="toggleLeft()" class="md-primary" hide-gt-md>
+                        <i class="fa fa-bars"></i>
+                    </md-button>
+                    <span>Toolbar</span>
+                </h2>
+            </md-toolbar>
+            <div layout="column" class="content_ph">
+                <p>
+                    The left sidenav will 'lock open' on a medium (>=960px wide) device.
+                </p>
+            </div>
+        </md-content>
+    </section>
+</div>
+
+<!-- Angular Material Dependencies -->
+<script src="bower_components/hammerjs/hammer.min.js"></script>
+<script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-animate/angular-animate.min.js"></script>
+<script src="bower_components/angular-aria/angular-aria.min.js"></script>
+<script src="bower_components/angular-material/angular-material.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

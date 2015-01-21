@@ -1,0 +1,15 @@
+html, body {
+  font-size: 16px;
+  background: #fff url('../images/bg.svg?12') top left no-repeat;
+  background-size: cover;
+}
+
+md-content.content_mainContent {
+  background: rgba(255,255,255, 0.85);
+  md-toolbar .fa-bars {
+    color: #fff;
+  }
+  .content_ph {
+    padding: 1rem;
+  }
+}
